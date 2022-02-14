@@ -1,0 +1,254 @@
+body {
+	font-family: "Inter", sans-serif;
+	background-image: linear-gradient(#01161e, #0d1321);
+}
+
+.carouse-card-img-overlay {
+	background-image: linear-gradient(#01161e09, #01161e);
+	position: absolute;
+	height: 100px;
+	top: auto;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 1rem;
+	border-radius: calc(0.25rem - 1px);
+}
+
+.card-img-overlay {
+	background-image: linear-gradient(to right, #01161ea9, #01161e49);
+	top: auto;
+	border-radius: 0px;
+}
+
+.carousel-captionn {
+	text-align: justify;
+	max-width: 450px;
+	position: absolute;
+	bottom: 4.25rem;
+	left: 9%;
+	padding-top: 1.25rem;
+	padding-bottom: 1.25rem;
+	color: #fff;
+}
+
+.my-carousel-caption {
+	background-image: linear-gradient(to right, #01161e8c, #01161e3a);
+}
+
+.my-carousel-caption h3 {
+	color: #009ad6;
+}
+
+.main-div {
+	background-image: radial-gradient(circle, #283b4b, #1c2838, #18202c);
+}
+
+.main-div .row .col-12 h3 {
+	font-weight: bolder;
+	color: white;
+}
+
+.shadow-sm {
+	box-shadow: 0 0.5rem 1rem #222e38 !important;
+}
+
+.card {
+	max-width: 286px !important;
+}
+
+.card-pic {
+	height: 452.83px;
+}
+
+.cards-img-height {
+	height: 424.23px;
+}
+
+.card:hover {
+	box-shadow: 0 10px 8px 0 rgba(116, 116, 116, 0.527),
+		0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card:hover .card-img-overlay {
+	bottom: -18px;
+}
+
+.card-title {
+	display: block;
+	color: #009ad6;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 1rem;
+	margin-bottom: -3px;
+}
+
+.card-title:hover {
+	font-weight: bolder;
+	color: #00648b;
+}
+
+.card-text {
+	color: #d6f4ff;
+	font-size: 0.7rem;
+	display: inline;
+}
+
+.icon-heart {
+	margin-top: -10px;
+	float: right;
+}
+
+.icon-heart:hover {
+	color: rgb(168, 168, 168);
+}
+
+.genre-btn {
+	padding: 7px 25px;
+	color: white;
+	background-image: radial-gradient(circle, #0099d691, #025c80bb, #013144);
+	border-radius: 20px;
+}
+
+.genre-btn:hover {
+	padding: 7px 30px;
+	color: rgb(167, 167, 167);
+	background-image: radial-gradient(circle, #025374d0, #025374c0, #012d3f);
+}
+
+.modal-btn {
+	margin: 0px 5px;
+	padding: 7px 25px;
+	color: white;
+	border-radius: 20px;
+	background-image: radial-gradient(circle, #0099d691, #025c80bb, #013144);
+}
+
+.modal-btn:hover {
+	padding: 7px 30px;
+	color: rgb(167, 167, 167);
+	background-image: radial-gradient(circle, #025374d0, #025374c0, #012d3f);
+}
+
+.explanation-text {
+	color: #d2d2d2;
+	font-size: 18px;
+}
+
+.my-input {
+	background-image: radial-gradient(circle, #283b4b, #1c2838, #18202c);
+	box-shadow: 2px 2px 20px #2d2d2d;
+}
+
+.footer-link {
+	text-decoration: none;
+	color: #d2d2d2;
+	font-size: 17px;
+}
+
+.footer-link:hover {
+	color: #757575;
+}
+
+.modal-dialog {
+	max-width: 739px;
+}
+
+.video-player-frame {
+	width: 700px !important;
+}
+
+.modal-content {
+	background-image: radial-gradient(circle, #283b4b, #1c2838, #18202c);
+}
+
+.loader {
+	display: none;
+}
+
+.resp-container {
+	position: relative;
+	overflow: hidden;
+	padding-top: 56.25%;
+}
+/* ALL MEDIA QUERYS */
+
+@media screen and (max-width: 1400px) {
+}
+
+@media screen and (max-width: 1200px) {
+	.card {
+		margin: auto;
+	}
+	.carousel-captionn {
+		max-width: 400px;
+	}
+	.carousel-title {
+		font-size: 23px;
+	}
+	.carousel-genre {
+		font-size: 13px;
+	}
+	.carousel-text {
+		font-size: 13px;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.carousel-captionn {
+		max-width: 330px;
+	}
+	.carousel-title {
+		font-size: 21px;
+	}
+	.carousel-text {
+		font-size: 12px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.card {
+		margin: auto;
+	}
+
+	.center-btn {
+		text-align: center;
+		margin-top: 25px !important;
+	}
+	.carousel-captionn {
+		max-width: 280px;
+		bottom: 1.5rem !important;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.carousel-captionn {
+		max-width: 280px;
+		bottom: 0.5rem !important;
+	}
+	.carousel-title {
+		font-size: 18px;
+	}
+	.carousel-genre {
+		font-size: 9px;
+	}
+	.carousel-text {
+		font-size: 9px;
+	}
+}
+
+@media screen and (max-width: 539px) {
+	.carousel-captionn {
+		max-width: 230px;
+		left: 20%;
+	}
+	.carousel-title {
+		font-size: 16px;
+	}
+	.carousel-genre {
+		font-size: 7px;
+	}
+	.carousel-text {
+		font-size: 7px;
+	}
+}

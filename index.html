@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+			crossorigin="anonymous"
+		/>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+			crossorigin="anonymous"
+		></script>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="shortcut icon" href="Images/download.png"/>
+		<title>IMDB</title>
+	</head>
+	<body>
+		<div
+			id="carouselExampleFade"
+			class="carousel slide carousel-fade mb-5"
+			data-bs-ride="carousel"
+		>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img
+						src="Images/wp4934994.jpg"
+						class="d-block w-100"
+						id="carousel-border-radius"
+					/>
+					<div class="carouse-card-img-overlay"></div>
+					<div
+						class="carousel-captionn my-carousel-caption p-3"
+					>
+						<h3 class="fw-bold carousel-title">The Avenger</h3>
+						<p>
+							<b class="text-white-50 carousel-genre">Genre: Superhero</b>
+						</p>
+						<p class="carousel-text">
+							Marvel's The Avengers[6] (classified under the name Marvel
+							Avengers Assemble in the United Kingdom and Ireland),[3][7] or
+							simply The Avengers, is a 2012 American superhero film based on
+							the Marvel Comics superhero team of the same name. Produced by
+							Marvel Studios and distributed by Walt Disney Studios Motion
+							Pictures,[N 1] it is the sixth film in the Marvel Cinematic
+							Universe (MCU).
+						</p>					
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img
+						src="Images/thumb-1920-85182.jpg"
+						class="d-block w-100 my-carousel-caption-pic"
+						id="carousel-border-radius"
+					/>
+					<div class="carouse-card-img-overlay"></div>
+					<div
+						class="carousel-captionn my-carousel-caption p-3"
+					>
+						<h3 class="fw-bold carousel-title">Inception</h3>
+						<p>
+							<b class="text-white-50 carousel-genre">Genre : Science Fiction</b>
+						</p>
+						<p class="carousel-text">
+							Inception is a 2010 science fiction action film[4][5][6] written
+							and directed by Christopher Nolan, who also produced the film with
+							Emma Thomas, his wife. The film stars Leonardo DiCaprio as a
+							professional thief who steals information by infiltrating the
+							subconscious of his targets.
+						</p>						
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img
+						src="Images/thumb-1920-8825488.jpg"
+						class="d-block w-100 my-carousel-caption-pic"
+						id="carousel-border-radius"
+					/>
+					<div class="carouse-card-img-overlay"></div>
+					<div
+						class="carousel-captionn my-carousel-caption p-3"
+					>
+						<h3 class="fw-bold carousel-title">Stranger Things</h3>
+						<p>
+							<b class="text-white-50 carousel-genre">Genre : Science Fiction , Scary</b>
+						</p>
+						<p class="carousel-text">
+							Stranger Things is an American science fiction horror drama
+							television series created by the Duffer Brothers and streaming on
+							Netflix. The brothers serve as showrunners and are executive
+							producers along with Shawn Levy and Dan Cohen.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="main-div mt-5 mb-5 shadow-sm bg-body rounded p-5">
+					<div class="row">
+						<div class="col-12">
+							<h3 class="mb-4"><b>Most popular movies</b>
+								<div class="spinner-border mt-4 text-center	 ms-3 text-info" id="poploader" role="status">
+  									<span class="visually-hidden">Loading...</span>
+								</div></h3>
+						</div>
+					</div>
+					<div id="popular-div" class="row">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="main-div mt-5 shadow-sm bg-body rounded p-5">
+					<div class="row">
+						<div class="col-12">
+							<h3 class="text-white fw-bold text-center">
+								Choose a genre
+							</h3>
+							<div class="d-flex justify-content-center">
+  								<div class="spinner-border mt-3 text-info loader mb-3" id="genre-loader" role="status">
+   									 <span class="visually-hidden">Loading...</span>
+  								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<div class="d-flex justify-content-center mt-4">
+								<div class="row">
+									<div class=" col-12 center-btn col-sm-6 col-md-3">
+										<button
+											id="drama"
+											type="button"
+											class="btn genre-btn"
+										>
+											Drama
+										</button>
+									</div>
+									<div class=" col-12 center-btn col-sm-6 col-md-3">
+										<button
+											id="action"
+											type="button"
+											class="btn genre-btn"
+										>
+											Action
+										</button>
+									</div>
+									<div class=" col-12 center-btn col-sm-6 col-md-3">
+										<button
+											id="heroes"
+											type="button"
+											class="btn genre-btn"
+										>
+											Heroes
+										</button>
+									</div>
+									<div class="col-12 center-btn col-sm-6 col-md-3">
+										<button
+											id="horror"
+											type="button"
+											class="btn genre-btn"
+										>
+											Horror
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div id="genre-div" class="row mt-4"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row py-5">
+				<div class="main-div mt-5 shadow-sm bg-body rounded p-5">
+					<h1 class="text-white text-center"><b>SEARCH YOUR FAVORITE MOVIE</b></h1>
+					<p class="mt-2 text-white text-center pb-4">
+						You can search the movie you want by <b>its name</b>.
+					</p>
+					<h5 class="text-center text-white color-orange">Explanation :</h5>
+					<p class="explanation-text text-center">
+						1 : Please enter <b>the name of the movie</b> you want in the
+						<b>specified location</b> .
+					</p>
+					<p class="explanation-text text-center">
+						2 : Click the <b>OK</b> button to display the profile
+					</p>
+					<hr class="text-white mt-5" />
+					<div class="row">
+						<div class="col-12">
+							<div class="input-group mb-3">
+								<input
+									id="movie-input"
+									type="text"
+									class="form-control text-center text-white mt-5 my-input"
+									placeholder="Enter Movie Name"
+									aria-label="Recipient's username"
+									aria-describedby="button-addon2"
+								/>
+							</div>
+							<div class="d-flex justify-content-center">
+  								<div class="spinner-border text-info mt-3 loader mb-3" id="selectloader" role="status">
+   									 <span class="visually-hidden">Loading...</span>
+  								</div>
+							</div>
+							<div id="into-cards" class="row">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="main-div">
+        <div class="container">
+          <div class="row">
+            <div class="col py-4">
+                <a class="footer-link" href="mailto:ryanrhmani33@gmail.com"><b>contact with me</b> : ryanrahmani33@gmail.com</a>
+            </div>
+          </div>
+        </div>  
+
+
+		<script src="script.js"></script>
+	</body>
+</html>
